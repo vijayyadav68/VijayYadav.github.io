@@ -201,6 +201,69 @@ header{
      animation: imgg 2s ease-in-out infinite;
      animation-delay: 2s;
  }
+/***  SKILLS  ****/
+
+.skills{
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     padding: 40px 0%;
+ }
+ .coding_skills{
+
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     color: black;
+     width: 100%;
+ }
+ .skills .section_heading{
+     color: black;
+ }
+ .coding_skills h3{
+     font-size: 20px;
+ }
+ .coding_skills .skils{
+     display: flex;
+     gap: 30px;
+     flex-direction: column;
+ }
+ .coding_skills .skils h3{
+      font-size: 16px;
+ }
+ .coding_skills .skils h3 span{
+     color: aqua;
+ }
+ .coding_skills .skils .line{
+     height: 8px;
+     border-radius: 5px;
+     position: relative;
+     margin-top: 30px;
+     width: 200%;
+     background: rgba(255,255,255,0.2);
+ }
+ .coding_skills .skils .line::after{
+     position: absolute;
+     content: "";
+     height: 100%;
+     width: 100%;
+     background: rgb(7, 207, 242);
+     top: 0;
+     left: 0;
+     border-radius: 5px;
+ }
+ .coding_skills .skils .HTML .line::after{
+     width: 70%;
+ }
+ .coding_skills .skils .CSS .line::after{
+     width: 60%;
+ }
+ .coding_skills .skils .JAVASCRIPT .line::after{
+     width: 50%;
+ }
+ .coding_skills .skils .PAYTHAN .line::after{
+     width: 20%;
+ }
 
  
  @keyframes img {
@@ -256,6 +319,30 @@ header{
                 </div>
                    <a href="#" class="btn-box">More About Me</a>
                 </div>
+                <div class="wrapper skills-wrapper">
+                    <div class="skills">
+                              <div class="coding_skills">
+                              <h3>CODING SKILLS</h3>
+                              <div class="skils">
+                                   <div class="skill_name HTML">
+                                        <h3>HTML <span>70%</span></h3>
+                                        <div class="line"></div>
+                                   </div>
+                                   <div class="skill_name CSS">
+                                        <h3>CSS <span>60%</span></h3>
+                                        <div class="line"></div>
+                                   </div>
+                                   <div class="skill_name JAVASCRIPT">
+                                        <h3>JAVASCRIPT <span>50%</span></h3>
+                                        <div class="line"></div>
+                                   </div>
+                                   <div class="skill_name PAYTHAN">
+                                        <h3>PAYTHAN <span>20%</span></h3>
+                                        <div class="line"></div>
+                              </div>
+                         </div>
+                    </div>
+          
                 
 
                
