@@ -1,0 +1,474 @@
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+list-style: none;
+text-decoration: none;
+}
+
+body{
+background-color: rgb(16, 50, 63);
+overflow-x: hidden;
+}
+/** Navbar section On **/
+header{
+position: fixed;
+top: 0;
+right: 0;
+width: 100%;
+z-index: 1000;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+padding: 32px 15%;
+background: transparent;
+transition: all ease .45s;
+padding: 8px 4%;
+background: rgb(4, 26, 35);   
+}
+
+.logo{
+color: aqua;
+font-size: 41px;
+font-weight: 600;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.logo span{
+color: white;
+}
+.navbar{
+display: flex;
+margin-right: 150px;
+}
+.navbar a{
+font-size: 20px;
+font-weight: 600;
+color: aqua;
+margin: 0 14px;
+transition: all ease .50s;
+font-family: 'Times New Roman', Times, serif;
+
+}
+.navbar a:hover{
+color: white;
+}
+.navbar a.active{
+color: white;
+border-bottom: 3px solid ;
+}
+
+/** Navbar section End **/
+
+/** Home section On **/
+.image{
+    margin-top:50px ;
+    text-decoration-color:  aqua;
+    animation: img 2s ease-in-out infinite;
+    animation-delay: 2s;
+    }
+    img{
+    margin-left: 0px;
+    border-radius: 100%;
+    border: 7px solid   aqua;
+    box-shadow: 0 0 50px;
+    margin-bottom: 100px;
+    }
+    img:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 5px  aqua,
+        0 0 15px  aqua, 0 0 25px  aqua,
+        0 0 35px  aqua, 0 0 50px  aqua
+    }
+    @keyframes img{
+    0%{
+    transform: translateY(0);
+    }
+    50%{
+    transform: translateY(-22px);
+    }
+    100%{
+    transform: translateY(0);
+    }
+    
+    }
+
+.home{
+    padding-left: 50px;
+    margin-top: 30px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    color: white;
+}
+@media screen and (max-width:1200px){
+    .home{
+        height: 90vh;
+    }
+}
+@media screen and (max-width:799px){
+    .home{
+        height: 140vh;
+    }
+}
+@media screen and (max-width:550px){
+    .home{
+        height: 110vh;
+    }
+}
+
+
+.home-text h1{
+    color: aqua;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.btn-box {
+    display: inline-block;
+    border: 3px solid  aqua;
+    padding: 12px 28px;
+    background: white;
+    border-radius: 20px;
+    font-size: 12px;
+    color: aqua;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 5px  aqua,
+    0 0 15px  aqua, 0 0 25px  aqua,
+    0 0 30px  aqua, 0 0 40px  aqua
+}
+
+.home-sci a:hover {
+    background:   white;
+    color: aqua;
+    box-shadow: 0 0 20px  aqua;
+    transform: translateY(-10px);
+}
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid   aqua;
+    border-radius: 50%;
+    font-size: 30px;
+    color: rgb(249, 248, 248);
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    }
+
+.home-text h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+.home-text h3 {
+    font-family: 'Times New Roman', Times, serif;
+}
+.home-text p {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+/** Home section end **/
+
+
+/** About section on **/
+.about{
+    padding-left: 50px;
+    margin-top: 50px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    color: white;
+}
+.about-text h1{
+    color: aqua;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.about-text h3 {
+    font-family: 'Times New Roman', Times, serif;
+}
+.about-text p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+.btn-box{
+    margin-top: 20px;
+
+}
+section{
+    margin-top: 0px;
+    padding: 70px 4%;
+}
+@media screen and (max-width:1200px){
+    .about{
+        height: 90vh;
+    }
+}
+@media screen and (max-width:799px){
+    .about{
+        height: 140vh;
+    }
+}
+@media screen and (max-width:550px){
+    .about{
+        height: 110vh;
+    }
+}
+
+
+/** About section End **/
+
+
+/** Skills section On **/
+.skills{
+    
+}
+.main-text h1{
+        color: aqua;
+        text-align: center;
+        font-size: 50px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.main-text p{
+    text-align: center;
+}
+.skill-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap:50px;
+}
+.skill-bar{
+    margin-bottom: 2.3rem;
+}
+.skill-main h2{
+    margin-top: 30px;
+    margin-bottom: 2rem;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+        font-family: 'Times New Roman', Times, serif;
+}
+.skill-left .skill-bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 20px;
+}
+.info p{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.skill-left .skill-bar .bar{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(79, 79, 92);
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+.skill-bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: aqua;
+    border-radius: 25px;
+    box-shadow: var(--neon-box-shadow);
+}
+
+.skill-bar .bar .html{
+    width: 75%;
+    animation: html 2s;
+}
+.skill-bar .bar .css{
+    width: 70%;
+    animation: css 3s;
+}
+.skill-bar .bar .javascript{
+    width: 50%;
+    animation: javascript 4s;
+}
+.skill-bar .bar .Bodtsrap{
+    width: 40%;
+    animation: Bodtsrap 5s;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes Bodtsrap {
+    0% {
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+
+
+@media screen and (max-width:1200px){
+    .skills{
+        height: 90vh;
+    }
+}
+@media screen and (max-width:799px){
+    .skills{
+        height: 140vh;
+    }
+}
+@media screen and (max-width:550px){
+    .skills{
+        height: 110vh;
+    }
+}
+/** Skills section On **/
+
+
+/* contact */
+
+.contect h1{
+    color: aqua;
+    text-align: center;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.contect form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contect form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contect form .input-box input,
+.contect form textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    color: aqua;
+    background: rgb(12, 34, 43);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+.contect form .input-box input {
+    width: 49.5%;
+}
+@media screen and (max-width:1200px){
+    .contect{
+        height: 90vh;
+    }
+}
+@media screen and (max-width:799px){
+    .contect{
+        height: 140vh;
+    }
+}
+@media screen and (max-width:550px){
+    .contect{
+        height: 110vh;
+    }
+}
+
+
+/* contact */
+
+/* footer */
+#footer{
+    width: 100%;    
+    background-color: rgb(4, 26, 35);
+    box-shadow: 0px 0px 5px black;
+    margin-top: 100px;
+    text-align: center;
+}
+#footer h1{
+    color: aqua;
+    font-size: 40px;
+    padding-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#footer p{
+    margin-top: 20px;
+    color: white;
+}
+.icons i{
+    background-color: white;
+    color: aqua;
+    border-radius: 50px;
+    padding: 6px;
+    margin-top: 10px;
+    font-size: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.icons i:hover{
+    background-color: aqua;
+    color: white;
+}
+.copyright{
+    color: aqua;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+/* footer */
+
+
+
+
